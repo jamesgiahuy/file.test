@@ -1,0 +1,41 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    .boxed {
+        margin-top: 20px;
+        /* transform: rotate(45deg); */
+        text-align: center;
+        animation: loading 1.5s normal infinite 2s;
+    }
+    
+    .box1 {
+        width: 3rem;
+        height: 3rem;
+        background-color: white;
+        border-radius: 50%;
+        border: 2px solid blueviolet;
+        display: inline-block;
+        margin-left: 3px;
+    }
+    
+    .box1:first-child {
+        border-color: red;
+    }
+    
+    @keyframes loading {
+        0% {
+            transform: rotate();
+        }
+        25% {
+            transform: rotate(200deg);
+        }
+        50% {
+            transform: rotate(160deg);
+        }
+        100% {
+            transform: rotate(90deg);
+        }
+    }
